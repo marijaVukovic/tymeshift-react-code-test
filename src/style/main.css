@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
+.header {
+  width: 100%;
+  top: 0;
+}
+
+.nav-bar {
+  height: 96px;
+  border-bottom: 1px solid #eeeeee;
+  padding: 18px 30px;
+}
+
+.heading {
+  color: rgba(0, 17, 34, 0.3);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.75;
+}
+
+.sub-heading {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.273;
+  color: rgba(0, 17, 34, 0.8);
+}
+
+.stat-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.714;
+  color: rgba(0, 17, 34, 0.8);
+}
+
+.stat-icon {
+  width: 14px;
+  height: 14px;
+  opacity: 0.3;
+  margin-right: 8px;
+}
+
+.edit-icon-wrapper {
+  height: 26px;
+  width: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100px;
+  background: white;
+  padding: 6px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.edit-icon {
+  width: 14px;
+  height: 14px;
+  opacity: 0.5;
+  margin: 6px;
+}
+
+.wrapper {
+  padding-right: 35px;
+  padding-left: 60px;
+  padding-bottom: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.location-card {
+  width: 340px;
+  height: 139px;
+  padding: 15px 25px;
+  margin-top: 22px;
+  margin-right: 25px;
+  border: 1px solid rgba(0, 17, 34, 0.1);
+  border-radius: 2px;
+  background-color: rgba(246, 246, 246, 0.2);
+  cursor: pointer;
+  position: relative;
+}
+
+.location-card:hover {
+  background-color: #f6f6f6;
+}
+
+.card-heading {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.778;
+  color: rgba(0, 17, 34, 0.8);
+}
+
+.card-stats {
+  margin-top: 5px;
+}
+
+.modal-wrapper {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 17, 34, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.close-modal {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  opacity: 0.3;
+}
+
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 350px;
+  width: 440px;
+  padding: 0px 25px;
+  background-color: white;
+}
+
+.modal-header {
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0px;
+}
+
+.modal-header-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(0, 17, 34, 0.8);
+  line-height: 1.5;
+}
+
+.modal-content {
+  margin-top: 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.modal-description {
+  margin-top: 20px;
+  padding-bottom: 15px;
+  color: rgba(0, 17, 34, 0.8);
+  line-height: 1.714;
+}
+
+.modal-description-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.modal-description-content {
+  height: 96px;
+  font-size: 14px;
+  font-weight: 400;
+  overflow: auto;
+}
+
+.modal-footer {
+  height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.notification-message {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 130px;
+  color: rgba(0, 17, 34, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .wrapper {
+    padding-right: 55px !important;
+    padding-left: 55px !important;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .wrapper {
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+  }
+  .location-card {
+    width: 310px !important;
+  }
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .wrapper {
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+  }
+  .location-card {
+    width: 310px !important;
+  }
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+@media (min-width: 481px) and (max-width: 768px) {
+  .wrapper {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+@media (min-width: 320px) and (max-width: 480px) {
+  .wrapper {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+
+.done-btn {
+  width: 64px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: #37b24d;
+  color: white;
+  line-height: 1.714;
+  font-size: 14px;
+  font-weight: 600;
+  border: 0;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Lato", "Roboto", sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.box-sizing {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}

@@ -1,0 +1,26 @@
+@import '../variables';
+
+.header {
+  width: 100%;
+  top: 0;
+}
+
+.nav-bar {
+  height: 96px;
+  border-bottom: 1px solid $navbar-bottom-color;
+  padding: 18px 30px;
+}
+
+.heading {
+  color: rgba($main-color, 0.3);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.75;
+}
+
+.sub-heading {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.273;
+  color: rgba($main-color, 0.8);
+}

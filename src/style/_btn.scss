@@ -1,0 +1,14 @@
+@import './variables';
+
+.done-btn {
+  width: 64px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: $btn-color;
+  color: $main-background-color;
+  line-height: 1.714;
+  font-size: 14px;
+  font-weight: 600;
+  border: 0;
+  cursor: pointer;
+}
