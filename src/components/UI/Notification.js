@@ -1,8 +1,8 @@
-const Notification = (props) => {
+const Notification = ({ title, message }) => {
   return (
     <section className='notification-message'>
-      <h2>{props.title}</h2>
-      <p>{props.message}</p>
+      <h2>{title}</h2>
+      <p>{message}</p>
     </section>
   );
 };
