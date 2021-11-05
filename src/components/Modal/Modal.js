@@ -2,7 +2,12 @@ import Close from '../../assets/img/Close.svg';
 
 import LocationStatistics from '../LocationStatistics/LocationStatistics';
 
-const Modal = ({ locationViews, modalData, closeModal, isVisible }) => {
+const Modal = ({
+  locationViews,
+  closeModal,
+  isVisible,
+  modalData: { name, userCount, createdAt, description },
+}) => {
   return (
     <>
       {isVisible ? (
@@ -12,7 +17,7 @@ const Modal = ({ locationViews, modalData, closeModal, isVisible }) => {
         >
           <div className='modal box-sizing'>
             <header className='modal-header box-sizing'>
-              <span className='modal-header-title'>{modalData.name} </span>
+              <span className='modal-header-title'>{name} </span>
               <img
                 src={Close}
                 className='close-modal'
@@ -22,15 +27,13 @@ const Modal = ({ locationViews, modalData, closeModal, isVisible }) => {
             </header>
             <main className='modal-content box-sizing'>
               <LocationStatistics
-                userNumber={modalData.userCount}
-                locationTimezone={modalData.createdAt}
+                userNumber={userCount}
+                locationTimezone={createdAt}
                 locationViews={locationViews}
               />
               <div className='modal-description'>
                 <span className='modal-description-title'>Descritpion</span>
-                <div className='modal-description-content'>
-                  {modalData.description}
-                </div>
+                <div className='modal-description-content'>{description}</div>
               </div>
             </main>
             <footer className='modal-footer'>
