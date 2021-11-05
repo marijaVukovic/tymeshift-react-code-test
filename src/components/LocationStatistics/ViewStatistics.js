@@ -1,10 +1,10 @@
 import Views from '../../assets/img/Views.svg';
 
-const ViewStatistics = (props) => {
+const ViewStatistics = ({ locationViews }) => {
   return (
     <div className='stat-wrapper'>
       <img src={Views} className='stat-icon' alt='view-icon' />
-      <span>{props.locationViews} Views</span>
+      <span>{locationViews} Views</span>
     </div>
   );
 };
