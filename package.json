@@ -11,6 +11,7 @@
     "react-scripts": "4.0.3",
     "redux": "^4.1.1",
     "sass": "^1.43.4",
+    "set-value": "^4.1.0",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
