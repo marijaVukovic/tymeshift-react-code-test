@@ -4,14 +4,21 @@ import Edit from '../../assets/img/Edit.svg';
 
 import LocationStatistics from '../LocationStatistics/LocationStatistics';
 
-const LocationCard = (props) => {
+const LocationCard = ({
+  id,
+  locationName,
+  userNumber,
+  locationTimezone,
+  onViewCount,
+  showModal,
+}) => {
   const [isHover, setHover] = useState(false);
   const [locationViewCount, setViews] = useState(0);
 
   //handles click on Edit button
   const clickEditHandler = (event) => {
     event.stopPropagation();
-    alert(`Edit card number ${props.id}`);
+    alert(`Edit card number ${id}`);
   };
 
   //hangles showing/hiding Edit button
@@ -21,8 +28,8 @@ const LocationCard = (props) => {
 
   const clickCardHandler = () => {
     setViews(locationViewCount + 1);
-    props.onViewCount(locationViewCount + 1);
-    props.showModal(props.id);
+    onViewCount(locationViewCount + 1);
+    showModal(id);
   };
 
   return (
@@ -32,7 +39,7 @@ const LocationCard = (props) => {
       onMouseEnter={isHoverHandler}
       onMouseLeave={isHoverHandler}
     >
-      <span className='card-heading'>{props.locationName}</span>
+      <span className='card-heading'>{locationName}</span>
 
       {isHover ? (
         <span
@@ -45,8 +52,8 @@ const LocationCard = (props) => {
 
       <div className='card-stats'>
         <LocationStatistics
-          userNumber={props.userNumber}
-          locationTimezone={props.locationTimezone}
+          userNumber={userNumber}
+          locationTimezone={locationTimezone}
           locationViews={locationViewCount}
         />
       </div>

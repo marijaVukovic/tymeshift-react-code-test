@@ -1,10 +1,10 @@
 import Users from '../../assets/img/Users.svg';
 
-const UserStatistics = (props) => {
+const UserStatistics = ({ userNumber }) => {
   return (
     <div className='stat-wrapper'>
       <img src={Users} className='stat-icon' alt='user-icon' />
-      <span>{props.userNumber} Users</span>
+      <span>{userNumber} Users</span>
     </div>
   );
 };

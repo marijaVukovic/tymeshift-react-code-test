@@ -2,12 +2,16 @@ import UserStatistics from './UserStatistics';
 import TimezoneStatistics from './TimezoneStatistics';
 import ViewStatistics from './ViewStatistics';
 
-const LocationStatistics = (props) => {
+const LocationStatistics = ({
+  userNumber,
+  locationTimezone,
+  locationViews,
+}) => {
   return (
     <div>
-      <UserStatistics userNumber={props.userNumber} />
-      <TimezoneStatistics locationTimezone={props.locationTimezone} />
-      <ViewStatistics locationViews={props.locationViews} />
+      <UserStatistics userNumber={userNumber} />
+      <TimezoneStatistics locationTimezone={locationTimezone} />
+      <ViewStatistics locationViews={locationViews} />
     </div>
   );
 };

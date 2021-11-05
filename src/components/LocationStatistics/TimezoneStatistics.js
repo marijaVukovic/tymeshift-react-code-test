@@ -1,7 +1,7 @@
 import Timezone from '../../assets/img/Timezone.svg';
 
-const TimezoneStatistics = (props) => {
-  const time = new Date(props.locationTimezone);
+const TimezoneStatistics = ({ locationTimezone }) => {
+  const time = new Date(locationTimezone);
   const timeStamp = time.toLocaleTimeString('en-US', {
     timeZone: 'CET',
     hour: '2-digit',
